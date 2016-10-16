@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Web Documentaire - Episode #1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Animate core CSS -->
+    <link href="assets/css/animate.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+	  <script src="assets/js/modernizr.custom.js"></script>
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">Web Documentaire</a></h1>
+			<a href="#home" class="smoothScroll">Acceuil</a>
+			<a href="#about" class="smoothScroll">Geoview</a>
+			<a href="#portfolio" class="smoothScroll">WebDocs</a>
+			<a href="#contact" class="smoothScroll">Contact</a>
+			<a href="#"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href="#"><i class="icon-envelope"></i></a>
+		</div>
+
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+
+
+
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="logo">
+        <img src="assets/img/webdoc.png" height="50" width="150">
+			</div>
+			<br>
+			<div class="row">
+				<h1>DECOUVREZ LEURS TALENTS</h1>
+				<br>
+				<h3>Commandez vos piéces sur-mesure.</h3>
+				<br>
+				<br>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+
+
+	<!-- ========== ABOUT SECTION ========== -->
+	<section id="about" name="about"></section>
+	<div id="f">
+		<div class="container">
+      <div class="row">
+				<h3>GEOVIEW</h3>
+
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+			</div>
+
+      <div class="row">
+
+
+
+        <div id="map"></div>
+
+
+        <script type="text/javascript">
+
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+            });
+          }
+
+        </script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7mWiJ9JJ9NwMqmjXlm_M6jpKe9m1Vwc0&callback=initMap">
+        </script>
+      </div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+
+	<!-- ========== CAROUSEL SECTION ========== -->
+	<section id="portfolio" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>PORTRAITS</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+        <div id="myWorkContent" onmouseover="hideGif()" onmouseout="showGif()">
+
+
+
+
+            <div class="videocontainer">
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+            </div>
+            <div class="videocontainer">
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+            </div>
+            <div class="videocontainer">
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+            </div>
+            <div class="videocontainer">
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+            </div>
+            <div class="videocontainer">
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+            </div>
+            <div class="videocontainer">
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+
+              <video class="videoviewer" width="400" height="222" controls="controls">
+                <source id="videoplayer" src="assets/video/reportage01.mp4" type="video/mp4" />
+                Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+              </video>
+            </div>
+
+
+
+
+
+          </div>
+
+                  <img id="instruction-portrait" src="assets/img/make-scroll.GIF" height="50" width="150">
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
+
+	<!-- ========== CONTACT SECTION ========== -->
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+
+
+      <div class="row">
+
+        <div id="contactBlock1">
+          <h3>NOUS CONTACTEZ</h3>
+          <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+          <div class="col-lg-6 col-lg-offset-3">
+            <p>Cultur All ®<br/>Lille, France<br/>+33(0) 6 25 58 22 70</p>
+            <p>com@cultur-all.org</p>
+            <p><button type="button" class="btn btn-warning" onclick="contactSwitch()">ENVOYEZ NOUS UN MESSAGE</button></p>
+          </div>
+        </div>
+
+        <div id="contactBlock2">
+          <h3>UN PETIT MOT ?</UN></h3>
+          <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+          <div class="col-lg-6 col-lg-offset-3">
+
+            <div class="form-group">
+              <input type="name" class="form-control" id="usrName" placeholder="Nom">
+              <p id="erorContact1" class="error-contact">Veuillez entrer un nom pour faciliter l'identification.</p>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="usrMail" placeholder="Adresse Email">
+              <p id="erorContact2" class="error-contact">Veuillez entrer un email correct afin de nous vous recontactons.</p>
+            </div>
+
+            <div class="form-group">
+              <input type="sujet" class="form-control" id="usrObj" placeholder="Objet">
+              <p id="erorContact3" class="error-contact">Veuillez entrer un sujet pour faciliter la compréhension de votre demande.</p>
+            </div>
+
+            <div class="form-group">
+              <textarea id="usrMsg" class="form-control" rows="4" placeholder="Tapez votre text ici..." ></textarea>
+              <p id="erorContact4" class="error-contact">Veuillez entrer votre message.</p>
+              <p id="emailsuccess" class="error-contact">Votre message à était envoyé avec succées, nous vous recontacterons dés que possible.</p>
+            </div>
+
+            <p><button type="button" class="btn btn-warning" onclick="sendEmail()">ENVOYEZ VOTRE MESSAGE</button></p>
+          </div>
+        </div>
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+<script>
+
+function sendEmail(){
+  var formatMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  var usrName = document.getElementById("usrName").value;
+  var usrMail = document.getElementById("usrMail").value;
+  var usrObj = document.getElementById("usrObj").value;
+  var usrMsg = document.getElementById("usrMsg").value;
+
+  if ( usrName=="" ){
+
+    document.getElementById("erorContact1").style.display = "block";
+    document.getElementById("erorContact1").style.color = "red";
+    return "entrer nom correct";
+  }else if (!(formatMail.test(usrMail))){
+
+    document.getElementById("erorContact1").style.display = "none";
+    document.getElementById("erorContact2").style.display = "block";
+    document.getElementById("erorContact2").style.color = "red";
+    return "entrer adresse mail correct";
+  }else if ( !(usrObj.length >= 1) ){
+
+    document.getElementById("erorContact1").style.display = "none";
+    document.getElementById("erorContact2").style.display = "none";
+    document.getElementById("erorContact3").style.display = "block";
+    document.getElementById("erorContact3").style.color = "red";
+    return "entrer sujet correct";
+
+  }else if ( !(usrMsg.length >=10) ){
+    document.getElementById("erorContact1").style.display = "none";
+    document.getElementById("erorContact2").style.display = "none";
+    document.getElementById("erorContact3").style.display = "none";
+    document.getElementById("erorContact4").style.display = "block";
+    document.getElementById("erorContact4").style.color = "red";
+    return "entrer message correct";
+
+  }else if (
+            (!(usrName=="")) &&
+            (formatMail.test(usrMail)) &&
+            (usrObj.length >= 1) &&
+            (usrMsg.length >=10)
+          ){
+
+    document.getElementById("erorContact1").style.display = "none";
+    document.getElementById("erorContact2").style.display = "none";
+    document.getElementById("erorContact3").style.display = "none";
+    document.getElementById("erorContact4").style.display = "none";
+
+
+
+    var xhr = new XMLHttpRequest();
+    var urlSend = "http://91.134.134.160:80/email/FromWebDoc-"+usrName+"-"+usrMail+"/FromWebDoc-"+usrObj+"/FromWebDoc-"+usrMsg+"";
+
+    xhr.open("GET", urlSend, true);
+    xhr.send();
+    console.log("sending an email bitch");
+    document.getElementById("emailsuccess").style.display = "block";
+    document.getElementById("emailsuccess").style.color = "green";
+    return "email sending";
+
+  }else{
+    console.log("impossible d'envoyer l'email, veuillez réssayer plus tard");
+    return "impossible d'envoyer le mail";
+  }
+
+}
+
+function contactSwitch(){
+
+    var blockContact1 = document.getElementById("contactBlock1");
+    var blockContact2 = document.getElementById("contactBlock2");
+
+    blockContact1.className += "animated fadeOutLeft";
+
+    setTimeout(function(){
+          blockContact1.style.display = "none";
+          blockContact2.style.display = "block";
+          blockContact2.className += "animated fadeInRight";
+    }, 250);
+
+    console.log(blockContact);
+
+}
+
+function showGif(){
+  document.getElementById("instruction-portrait").style.opacity = 1;
+}
+
+function hideGif(){
+    document.getElementById("instruction-portrait").style.opacity = 0;
+}
+</script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
